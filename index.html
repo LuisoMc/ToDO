@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <h1 class="llamativo">TODO's APP</h1>
+        <h2>Create notes of your daily`s task</h2>
+        <div class="creador">
+            <input type="text" placeholder="¿Qué es lo que vas hacer hoy?">
+            <select>
+                <option value="">Seleccione una opcion</option>
+                <option value="urgente">Urgente</option>
+                <option value="prioritario">Prioritario</option>
+                <option value="no-urgente">No urgente</option>
+            </select>
+            <button>Añadir</button>
+            <p id="error" style="color: red; display: none;">Por favor, complete todos los campos.</p>
+        </div>
+
+        <div class="filtros">
+            <select>
+                <option value="todos">Filtrar por prioridad</option>
+                <option value="urgente">Urgente</option>
+                <option value="prioritario">Prioritario</option>
+                <option value="no-urgente">No urgente</option>
+            </select>
+            <input type="text" placeholder="Introduce la tarea o palabra clave a buscar">
+        </div>
+        <div class="tareasEsp">
+            <ul class="listaTarea">
+                <!-- Aquí se agregarán las tareas -->
+                <!--    <li class="red">Limpiar arenero <button>Borrar</button></li>
+            <li class="orange">Hacer el ejercicio <button>Borrar</button></li>
+            <li class="green">Comprar aún <button>Borrar</button></li> -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright own by IDbootcamps</p>
+    </footer>
+
+
+    <script src="./main.js"></script>
 </body>
 </html>
